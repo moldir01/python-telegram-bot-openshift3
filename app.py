@@ -21,7 +21,8 @@ def help(bot, update):
 
     keyboardButtons = [[InlineKeyboardButton("скорая помощь", callback_data="1")],
                        [InlineKeyboardButton("служба пожаратушения", callback_data="2")],
-                       [InlineKeyboardButton("полиция",callback_data="3")]]
+                       [InlineKeyboardButton("служба газа", callback_data="3")],
+                       [InlineKeyboardButton("полиция",callback_data="4")]]
     keyboard = InlineKeyboardMarkup(keyboardButtons)
     update.message.reply_text('Сделайте выбор:', reply_markup=keyboard)
 
@@ -32,7 +33,9 @@ def button(bot, update):
         text = "телефон 103"
     elif query.data == "2":
         text = "телефон 101"
-    elif query.date == "3":
+    elif query.date == "3"
+        text = "телефон службы газа 104"
+    elif query.date == "4":
         text = "телефон 102"
     bot.editMessageText(text=text, chat_id=query.message.chat_id,
                         message_id=query.message.message_id)
