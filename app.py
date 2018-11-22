@@ -33,7 +33,7 @@ def button(bot, update):
         text = "телефон 103"
     elif query.data == "2":
         text = "телефон 101"
-    elif query.date == "3"
+    elif query.date == "3":
         text = "телефон службы газа 104"
     elif query.date == "4":
         text = "телефон 102"
